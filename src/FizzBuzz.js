@@ -1,9 +1,14 @@
 function fizzBuzz(n) {
-  if (n === 3) {
-    return 'Fizz';
-
-  } else if (n === 5) {
-    return 'Buzz';
+  answer = '';
+  if ((n % 3) === 0) {
+    answer += 'Fizz';
   }
-    return n;
+  if ((n % 5) === 0) {
+    answer += 'Buzz';
+  }
+
+  if ((n % 3) != 0 && (n % 5) != 0) {
+    answer = n;
+  }
+  return answer;
 }

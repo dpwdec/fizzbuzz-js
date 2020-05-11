@@ -6,8 +6,13 @@ describe('FizzBuzz', function() {
   it('3 returns Fizz', function() {
     expect(fizzBuzz(3)).toEqual('Fizz')
   });
-  
+
   it('5 returns Buzz', function() {
     expect(fizzBuzz(5)).toEqual('Buzz')
+  });
+
+  it('15 returns FizzBuzz', function() {
+    expect(fizzBuzz(15)).toEqual('FizzBuzz')
+
   });
 });
